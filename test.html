@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Force latest available IE rendering engine and Chrome Frame (if installed) -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<!-- Document Title & Description -->
+		<title></title>
+		<meta name="description" content="">
+
+		<!-- Mobile Screen Resizing -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Icons: place in the root directory -->
+		<!-- https://github.com/audreyr/favicon-cheat-sheet -->
+
+		<!-- Feature Test -->
+		<script>var isFontFaceSupported=function(e){"use strict";var t,s=document,n=s.head||s.getElementsByTagName("head")[0]||s.documentElement,r=s.createElement("style"),c="@font-face { font-family: 'webfont'; src: 'https://'; }",o=!1,a=function(){var t=e.navigator.userAgent.toLowerCase(),s=t.match(/applewebkit\/([0-9]+)/gi)&&parseFloat(RegExp.$1),n=t.match(/w(eb)?osbrowser/gi),r=t.indexOf("windows phone")>-1&&e.navigator.userAgent.match(/IEMobile\/([0-9])+/)&&parseFloat(RegExp.$1)>=9,c=533>s&&t.indexOf("Android 2.1")>-1;return n||c||r}();if(r.type="text/css",n.insertBefore(r,n.firstChild),t=r.sheet||r.styleSheet,t&&!a)try{t.insertRule(c,0),o=t.cssRules[0].cssText&&/webfont/i.test(t.cssRules[0].cssText),t.deleteRule(t.cssRules.length-1)}catch(u){}return o}(this),selectorSupported=function(e){"use strict";var t,s,n=document,r=n.documentElement,c=r.getElementsByTagName("head")[0],o=n.implementation||{hasFeature:function(){return!1}},a=n.createElement("style");return a.type="text/css",(c||r).insertBefore(a,(c||r).firstChild),s=a.sheet||a.styleSheet,s&&e?(t=o.hasFeature("CSS2","")?function(e){try{s.insertRule(e+"{ }",0),s.deleteRule(s.cssRules.length-1)}catch(t){return!1}return!0}:function(e){return s.cssText=e+" { }",0!==s.cssText.length&&!/unknown/i.test(s.cssText)&&0===s.cssText.indexOf(e)},t(e)):!1};isFontFaceSupported&&selectorSupported(":before")&&(document.documentElement.className+=(document.documentElement.className?" ":"")+"font-face");</script>
+
+		<!-- HTML5 Shim for IE 6-8 -->
+		<!--[if lt IE 9]>
+			<script src="js/min/html5.min.js"></script>
+		<![endif]-->
+
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<!-- stylesheets for IE 6-8 -->
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/ie.css" type="text/css">
+			<link media="print" rel="stylesheet" href="css/ie-print.css" type="text/css">
+		<![endif]-->
+		<style>
+
+			
+.device {
+  position: relative;
+  border-radius: 10px;
+  background-color: #22323f;
+  padding: 4px 20px 20px 20px;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1em;
+}
+.camera {
+  background-color: #3f5467;
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  margin: .25em auto .35em auto;
+}
+.screen {
+  margin-top: 4px;
+  background-color: #3f5467;
+  height: 400px;
+  text-align: center;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.toolbar {
+  border-radius: 6px 6px 0 0;
+  background-color: #fff;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.address-bar {
+  display: block;
+  border-radius: 3px;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  padding: 3px 6px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  color: #aaa;
+}
+.address-bar a {
+  text-decoration: none;
+  color: #aaa;
+}
+.browser-button {
+  position: relative;
+  top: 6px;
+  margin: 0 2px;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  display: block;
+  float: left;
+  background-color: #ececec;
+}
+.browser-button.active {
+  background-color: #ed4538;
+}
+.push-button {
+  margin-right: 10px;
+}
+.mobile-device {
+  min-width: 150px;
+  max-width: 350px;
+  padding: 6px 5px 10px 5px;
+}
+.circular-button {
+  background-color: #1c2934;
+  border-radius: 100%;
+  border: 2px solid #283b4a;
+  margin-top: 1em;
+  width: 2.5em;
+  height: 2.5em;
+  display: inline-block;
+}
+
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Old Browser Warning -->
+		<!-- If you're supporting IE 6-7, remove this -->
+		<!--[if lt IE 8]>
+			<section class="container">
+				Did you know that your web browser is a bit old? Some of the content on this site might not work right as a result. <a href="http://whatbrowser.org">Upgrade your browser</a> for a faster, better, and safer web experience.
+			</section>
+		<![endif]-->
+
+		<br/>
+		<div class="container">
+			<nav class="nav-wrap">
+				<a class="logo" href="#">Base</a>
+				<a class="nav-toggle" data-nav-toggle="#nav-menu" href="#"><i class="icon-menu"></i> Menu</a>
+				<div class="nav-collapse" id="nav-menu">
+					<ul class="nav">
+						<li><a href="index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="js.html">About</a>
+							<div class="dropdown-menu">
+								<ul>
+									<li><a href="http://cferdinandi.github.io/kraken/">About Kraken</a></li>
+									<li><a href="http://raju.com.au">Vijay</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="active"><a href="css.html">CSS Components</a></li>
+						<li><a href="js.html">JS Addons</a></li>						
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<section class="container">
+
+			<div class="row">
+				<div class="grid-fourth">
+				<h2>SmilePoint Dental</h2>
+
+					<p>A clean, minimalist, single page, mobile friendly design which uses smooth scroll navigation.</p>
+					<p>The site optimised to load extremely fast - assets have been minified and are served via a <a href="http://en.wikipedia.org/wiki/Content_delivery_network" target="_blank" rel="nofollow">content delivery network (CDN)</a>
+					<h4>Project:</h4>
+						<ul>
+							<li>web design - responsive design</li>
+							<li>web hosting</li>
+							<li>search engine optmisation</li>
+						</ul>	
+					</p>					
+					<p><a class="btn btn-primary" href="http://smilepoint.com.au/" target="_blank">Visit Site</a>				
+				</div> <!-- .grid-fourth -->
+				<div class="grid-half">
+					<div class="device right">
+						<span class="camera"></span>
+						<div class="screen">
+							<div class="toolbar">
+								<span class="browser-button active">&nbsp;</span>
+								<span class="browser-button">&nbsp;</span>
+								<span class="browser-button push-button">&nbsp;</span>
+								<span class="address-bar"><a href="http://smilepoint.com.au/">http://smilepoint.com.au/</a></span>
+							</div> <!-- .toolbar -->
+							<img src="img/smilepoint.jpg" alt="" />
+						</div> <!-- .screen -->
+					</div> <!-- .device -->
+				</div> <!-- .grid-half -->
+				<div class="grid-fourth">
+					<div class="device mobile-device">
+						<span class="camera"></span>
+							<img src="img/smilepoint-mobile.png" alt="" />
+						<span class="circular-button"></span>
+					</div> <!-- .device -->
+										
+				</div> <!-- .grid-fourth -->
+			</div> <!-- row -->
+			<hr/>
+		
+<br/>
+<br/>
+<br/>
+<div class="row">
+	<div class="grid-third">grid-third</div>
+		<div class="grid-third">grid-third</div>
+		<div class="grid-third">grid-third</div>	
+</div>			
+
+
+		</section>
+
+
+
+
+		<!-- Javascript -->
+		<!-- In the footer for better performance -->
+		<script src="js/min/scripts.min.js"></script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!-- (Via HTML5 Boilerplate: http://html5boilerplate.com/) -->
+		<!--
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+		-->
+	</body>
+</html>
